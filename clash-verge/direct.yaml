@@ -1,5 +1,4 @@
 #Name:Direct
-#待反馈是否误杀
   - DOMAIN-SUFFIX,ad.12306.cn
 #百度（可能有多余项）
   - DOMAIN-SUFFIX,eclick.baidu.com
