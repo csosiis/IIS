@@ -60,14 +60,26 @@ const ruleProviders = {
   "chatgpt": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://store.csosmen.us.kg/5ETh206uevfYDjv5904nj9aNsmgiRi/api/file/ChatGPT",
+    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/chatgpt.yaml",
     "path": "./ruleset/blackmatrix7/chatgpt.yaml"
   },
   "gemini": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://store.csosmen.us.kg/5ETh206uevfYDjv5904nj9aNsmgiRi/api/file/Gemini",
+    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/gemini.yaml",
     "path": "./ruleset/blackmatrix7/gemini.yaml"
+  },
+  "youtube": {
+    ...ruleProviderCommon,
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/youtube.yaml",
+    "path": "./ruleset/blackmatrix7/youtube.yaml"
+  },
+  "github": {
+    ...ruleProviderCommon,
+    "behavior": "classical",
+    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/github.yaml",
+    "path": "./ruleset/blackmatrix7/github.yaml"
   },
   "netflix": {
     ...ruleProviderCommon,
@@ -78,7 +90,7 @@ const ruleProviders = {
   "twitter": {
     ...ruleProviderCommon,
     "behavior": "classical",
-    "url": "https://store.csosmen.us.kg/share/file/twitter?token=niPr2MoO53NmDUzn5X4li",
+    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/twitter.yaml",
     "path": "./ruleset/blackmatrix7/twitter.yaml"
   },
   "cloudflare": {
@@ -96,7 +108,7 @@ const ruleProviders = {
   "reject": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt",
+    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/reject.txt",
     "path": "./ruleset/loyalsoldier/reject.yaml"
   },
   "icloud": {
@@ -163,17 +175,17 @@ const ruleProviders = {
 // 规则
 const rules = [
   // 自定义规则
-  "DOMAIN-SUFFIX,youtube.com,YouTube",
   "DOMAIN-SUFFIX,googleapis.cn,NodeSelector", // Google服务
   "DOMAIN-SUFFIX,gstatic.com,NodeSelector", // Google静态资源
   "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,NodeSelector", // Google Play下载服务
-  "DOMAIN-KEYWORD,github,Github", // Github Pages
   "DOMAIN-KEYWORD,speedtest,Speedtest",
   "DOMAIN,v2rayse.com,NodeSelector", // V2rayse节点工具
   "DOMAIN-KEYWORD,getgrass,Grass",
   "DOMAIN-KEYWORD,nodepay,Nodepay",
   // blackmatrix7 规则集
   "RULE-SET,chatgpt,ChatGPT",
+  "RULE-SET,youtube,YouTube",
+  "RULE-SET,github,Github",
   "RULE-SET,netflix,Netflix",
   "RULE-SET,twitter,Twitter",
   "RULE-SET,cloudflare,Cloudflare",
