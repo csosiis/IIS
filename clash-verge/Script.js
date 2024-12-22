@@ -59,44 +59,44 @@ const ruleProviders = {
   },
   "chatgpt": {
     ...ruleProviderCommon,
-    "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/chatgpt.yaml",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/openai.yaml",
     "path": "./ruleset/blackmatrix7/chatgpt.yaml"
   },
   "gemini": {
     ...ruleProviderCommon,
-    "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/gemini.yaml",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google-gemini.yaml",
     "path": "./ruleset/blackmatrix7/gemini.yaml"
   },
   "youtube": {
     ...ruleProviderCommon,
-    "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/youtube.yaml",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/youtube.yaml",
     "path": "./ruleset/blackmatrix7/youtube.yaml"
   },
   "github": {
     ...ruleProviderCommon,
-    "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/github.yaml",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.yaml",
     "path": "./ruleset/blackmatrix7/github.yaml"
   },
   "netflix": {
     ...ruleProviderCommon,
-    "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix.yaml",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/netflix.yaml",
     "path": "./ruleset/blackmatrix7/netflix.yaml"
   },
   "twitter": {
     ...ruleProviderCommon,
-    "behavior": "classical",
-    "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/twitter.yaml",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/twitter.yaml",
     "path": "./ruleset/blackmatrix7/twitter.yaml"
   },
   "cloudflare": {
     ...ruleProviderCommon,
-    "behavior": "classical",
-    "url": "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Cloudflare/Cloudflare.yaml",
+    "behavior": "domain",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cloudflare.yaml",
     "path": "./ruleset/blackmatrix7/cloudflare.yaml"
   },
   "proxy": {
@@ -111,16 +111,16 @@ const ruleProviders = {
     "url": "https://raw.githubusercontent.com/csosiis/VpnRuleSet/refs/heads/main/clash-verge/reject.txt",
     "path": "./ruleset/loyalsoldier/reject.yaml"
   },
-  "icloud": {
+  "microsoft": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt",
-    "path": "./ruleset/loyalsoldier/icloud.yaml"
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.yaml",
+    "path": "./ruleset/loyalsoldier/microsoft.yaml"
   },
   "apple": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple.yaml",
     "path": "./ruleset/loyalsoldier/apple.yaml"
   },
   "direct": {
@@ -132,7 +132,7 @@ const ruleProviders = {
   "private": {
     ...ruleProviderCommon,
     "behavior": "domain",
-    "url": "https://fastly.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt",
+    "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/private.yaml",
     "path": "./ruleset/loyalsoldier/private.yaml"
   },
   "gfw": {
@@ -180,8 +180,8 @@ const rules = [
   "DOMAIN-SUFFIX,xn--ngstr-lra8j.com,NodeSelector", // Google Play下载服务
   "DOMAIN-KEYWORD,speedtest,Speedtest",
   "DOMAIN,v2rayse.com,NodeSelector", // V2rayse节点工具
-  "DOMAIN-KEYWORD,getgrass,Grass",
-  "DOMAIN-KEYWORD,nodepay,Nodepay",
+  "DOMAIN-KEYWORD,getgrass,Global",
+  "DOMAIN-KEYWORD,nodepay,Global",
   // blackmatrix7 规则集
   "RULE-SET,chatgpt,ChatGPT",
   "RULE-SET,youtube,YouTube",
@@ -194,7 +194,7 @@ const rules = [
   "RULE-SET,applications,Global",
   "RULE-SET,private,Global",
   "RULE-SET,reject,AdBlock",
-  "RULE-SET,icloud,Microsoft",
+  "RULE-SET,microsoft,Microsoft",
   "RULE-SET,apple,AppleService",
   "RULE-SET,google,GoogleService",
   "RULE-SET,proxy,NodeSelector",
@@ -264,7 +264,7 @@ function main(config) {
       "name": "Gemini",
       "type": "select",
       "include-all": true,
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse_1.png"
+      "icon": "https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/NSFW.png"
     },
     {
       ...groupBaseOption,
@@ -318,23 +318,6 @@ function main(config) {
       "proxies": ["DIRECT", "NodeSelector"],
       "include-all": true,
       "icon": "https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/cloudflare.svg"
-    },
-    {
-      ...groupBaseOption,
-      "name": "Grass",
-      "type": "select",
-      "proxies": ["DIRECT"],
-      "include-all": true,
-      "filter":"台湾|TW",
-      "icon": "https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/GLaDOS.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "Nodepay",
-      "type": "select",
-      "proxies": ["DIRECT"],
-      "include-all": true,
-      "icon": "https://fastly.jsdelivr.net/gh/Orz-3/mini@master/Color/NSFW.png"
     },
     {
       ...groupBaseOption,
