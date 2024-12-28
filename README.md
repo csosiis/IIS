@@ -6,7 +6,7 @@ https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh
 
 #勇哥Serv00专用脚本
 
-https://raw.githubusercontent.com/yonggekkk/Cloudflare_vless_trojan/main/serv00_proxyip.sh
+https://raw.githubusercontent.com/yonggekkk/Cloudflare_vless_trojan/main/serv00.sh
 
 #勇哥VPS脚本
 
