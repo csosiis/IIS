@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh
 
 #CMVPS脚本
 
-https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh -o ssh_tool.sh
+https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh
 
 #DD重装
 
