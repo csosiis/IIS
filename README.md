@@ -23,3 +23,7 @@ https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh
 #服务器评测脚本
 
 https://github.com/spiritLHLS/ecs/raw/main/ecs.sh
+
+#哪吒面板nginx反向代理
+
+https://raw.githubusercontent.com/1keji/AddIPv6/main/manage_nginx.sh
