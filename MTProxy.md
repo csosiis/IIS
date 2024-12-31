@@ -1,7 +1,9 @@
 MTProxy一键安装脚本
 
 安装方式
+
 mkdir /home/mtproxy && cd /home/mtproxy
+
 curl -s -o mtproxy.sh https://raw.githubusercontent.com/ellermister/mtproxy/master/mtproxy.sh && chmod +x mtproxy.sh && bash mtproxy.sh
 
 使用方式
