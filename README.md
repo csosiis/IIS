@@ -27,3 +27,9 @@ https://github.com/spiritLHLS/ecs/raw/main/ecs.sh
 #哪吒面板nginx反向代理
 
 https://raw.githubusercontent.com/1keji/AddIPv6/main/manage_nginx.sh
+
+#Hax  ipv6 DNS设置
+/etc/resolv.conf
+nameserver 2a00:1098:2b::1
+nameserver 2a00:1098:2c::1
+nameserver 2a01:4f8:c2c:123f::1
