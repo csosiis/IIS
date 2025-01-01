@@ -60,4 +60,8 @@ nameserver 2a00:1098:2c::1
 nameserver 2a01:4f8:c2c:123f::1
 ```
 
+#### warp
 
+```
+wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh
+```
