@@ -30,6 +30,7 @@ curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/install.sh 
 停止并卸载服务：
 
 cd /opt/nezha/agent/
+
 ./nezha-agent service uninstall
 
 
