@@ -18,7 +18,7 @@ wget https://raw.githubusercontent.com/1keji/AddIPv6/main/manage_nginx.sh
 
 
 
-##### Serv00专用
+##### Serv00专用 安装nezha-agent
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/k0baya/nezha4serv00/main/install-agent.sh)
