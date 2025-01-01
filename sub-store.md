@@ -5,7 +5,7 @@
 #### 安装所需组件
 
 ```
-apt install unzip curl wget git sudo -y   
+apt install unzip curl wget git sudo -y
 ```
 
 
@@ -44,12 +44,12 @@ source /root/.bashrc
 
 
 
-#### 安装 Sub-Store 
+#### 安装 Sub-Store
 
 ##### 创建文件夹并拉取项目
 
 ```
-mkdir -p /root/sub-store  && cd sub-store 
+mkdir -p /root/sub-store  && cd sub-store
 ```
 
 
@@ -163,7 +163,7 @@ systemctl restart sub-store.service
 证书文件保存为 /root/cert/store.yumen.sbs/fullchain.pem （方便接下来的 Nginx 的配置，不建议改名字）
 
 ```
-cd /root && mkdir -p cert && cd cert && mkdir store.yumen.sbs && cd store.yumen.sbs && vim fullchain.pem 
+cd /root && mkdir -p cert && cd cert && mkdir store.yumen.sbs && cd store.yumen.sbs && vim fullchain.pem
 ```
 
 密钥文件保存为 /root/cert/store.yumen.sbs/privkey.pem
@@ -212,12 +212,26 @@ server {
 }
 ```
 
+
+
 ##### 确认无误以后，保存，并使用如下命令生效：
 
 ```
 nginx -s reload   # 重载Nginx配置
 
 nginx -t          # 查看配置是否正确
+```
+
+
+
+##### 访问地址：
+
+```
+https://store.yumen.sbs/?api=https://store.yumen.sbs/5gUs1W04QCuCWBtELgeLm62Gg54f3B
+```
+
+```
+https://haxus3.yumen.sbs/?api=https://haxus3.yumen.sbs/5gUs1W04QCuCWBtELgeLm62Gg54f3B
 ```
 
 
