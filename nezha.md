@@ -14,34 +14,10 @@ curl -L https://raw.githubusercontent.com/nezhahq/scripts/refs/heads/main/instal
 wget https://raw.githubusercontent.com/1keji/AddIPv6/main/manage_nginx.sh
 ```
 
-
-
-
-
-##### Serv00专用 安装nezha-agent
-
-```
-bash <(curl -s https://raw.githubusercontent.com/k0baya/nezha4serv00/main/install-agent.sh)
-```
-
-```
-nza.csosmen.us.kg
-```
-
-```
-1057
-```
-
-```
-NrUr7STkEX3Ngw08V8sWp9Sy2Al3b3Xh
-```
-
-
-
 ##### 安装agent-Serv00-S145
 
 ```
-curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/install.sh -o agent.sh && chmod +x agent.sh && env NZ_SERVER=nza.csosmen.us.kg:1057 NZ_TLS=false NZ_CLIENT_SECRET=NrUr7STkEX3Ngw08V8sWp9Sy2Al3b3Xh ./agent.sh
+curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/install.sh -o agent.sh && chmod +x agent.sh && env NZ_SERVER=188.68.240.160:1057 NZ_TLS=false NZ_CLIENT_SECRET=NrUr7STkEX3Ngw08V8sWp9Sy2Al3b3Xh ./agent.sh
 ```
 
 
@@ -65,5 +41,27 @@ cd /opt/nezha/agent/
 ```
 rm -rf /opt/nezha/agent/
 ```
+
+
+
+##### Serv00专用 安装nezha-agent
+
+```
+bash <(curl -s https://raw.githubusercontent.com/k0baya/nezha4serv00/main/install-agent.sh)
+```
+
+```
+188.68.240.160
+```
+
+```
+1057
+```
+
+```
+NrUr7STkEX3Ngw08V8sWp9Sy2Al3b3Xh
+```
+
+
 
 
