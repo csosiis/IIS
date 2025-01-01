@@ -25,7 +25,7 @@ bash <(curl -s https://raw.githubusercontent.com/k0baya/nezha4serv00/main/instal
 ```
 
 ```
-nz.csosmen.us.kg
+nza.csosmen.us.kg
 ```
 
 ```
@@ -33,7 +33,7 @@ nz.csosmen.us.kg
 ```
 
 ```
-YlDm9hbPtlAfg07VOReWwp0jWBbOJDTq
+NrUr7STkEX3Ngw08V8sWp9Sy2Al3b3Xh
 ```
 
 
@@ -41,7 +41,7 @@ YlDm9hbPtlAfg07VOReWwp0jWBbOJDTq
 ##### 安装agent-Serv00-S145
 
 ```
-curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/install.sh -o agent.sh && chmod +x agent.sh && env NZ_SERVER=nz.csosmen.us.kg:1057 NZ_TLS=false NZ_CLIENT_SECRET=YlDm9hbPtlAfg07VOReWwp0jWBbOJDTq ./agent.sh
+curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/install.sh -o agent.sh && chmod +x agent.sh && env NZ_SERVER=nza.csosmen.us.kg:1057 NZ_TLS=false NZ_CLIENT_SECRET=NrUr7STkEX3Ngw08V8sWp9Sy2Al3b3Xh ./agent.sh
 ```
 
 
