@@ -163,7 +163,7 @@ systemctl restart sub-store.service
 证书文件保存为 /root/cert/store.yumen.sbs/fullchain.pem （方便接下来的 Nginx 的配置，不建议改名字）
 
 ```
-cd /root && mkdir -p cert && cd cert && mkdir store.yumen.sbs && cd store.yumen.sbs && vim fullchain.pem
+cd /root && mkdir -p cert && cd cert && mkdir oregen.csosm.ip-ddns.com && cd oregen.csosm.ip-ddns.com && vim fullchain.pem
 ```
 
 密钥文件保存为 /root/cert/store.yumen.sbs/privkey.pem
@@ -200,9 +200,9 @@ vim sub-store.conf
 server {
   listen 443 ssl http2;
   listen [::]:443 ssl http2;
-  server_name store.yumen.sbs;
-  ssl_certificate /root/cert/store.yumen.sbs/fullchain.pem;
-  ssl_certificate_key /root/cert/store.yumen.sbs/privkey.pem;
+  server_name oregen.csosm.ip-ddns.com;
+  ssl_certificate /root/cert/oregen.csosm.ip-ddns.com/fullchain.pem;
+  ssl_certificate_key /root/cert/oregen.csosm.ip-ddns.com/privkey.pem;
   location / {
     proxy_pass http://127.0.0.1:3001;
     proxy_set_header Host $host;
@@ -227,11 +227,11 @@ nginx -t          # 查看配置是否正确
 ##### 访问地址：
 
 ```
-https://store.yumen.sbs/?api=https://store.yumen.sbs/5gUs1W04QCuCWBtELgeLm62Gg54f3B
+https://store.csosm.ip-ddns.com/?api=https://store.csosm.ip-ddns.com/5gUs1W04QCuCWBtELgeLm62Gg54f3B
 ```
 
 ```
-https://haxus3.yumen.sbs/?api=https://haxus3.yumen.sbs/5gUs1W04QCuCWBtELgeLm62Gg54f3B
+https://haxus3.csos.ip-ddns.com/?api=https://haxus3.yumen.sbs/5gUs1W04QCuCWBtELgeLm62Gg54f3B
 ```
 
 
