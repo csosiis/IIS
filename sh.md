@@ -1,5 +1,11 @@
 # VPS脚本
 
+###功能集合
+```
+bash <(curl -sL kejilion.sh)
+```
+
+
 ####S-ui脚本
 
 ```
