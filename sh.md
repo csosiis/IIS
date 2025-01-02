@@ -1,12 +1,12 @@
 # VPS脚本
 
-####功能集合
+##### 功能合集
+
 ```
 bash <(curl -sL kejilion.sh)
 ```
 
-
-####S-ui脚本
+##### S-ui脚本
 
 ```
 wget https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh
@@ -14,7 +14,7 @@ wget https://raw.githubusercontent.com/alireza0/s-ui/master/install.sh
 
 
 
-####勇哥Serv00专用脚本
+##### 勇哥Serv00专用脚本
 
 ```
 wget https://raw.githubusercontent.com/yonggekkk/Cloudflare_vless_trojan/main/serv00.sh
@@ -22,7 +22,7 @@ wget https://raw.githubusercontent.com/yonggekkk/Cloudflare_vless_trojan/main/se
 
 
 
-####勇哥VPS脚本
+##### 勇哥VPS脚本
 
 ```
 wget https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh
@@ -30,7 +30,7 @@ wget https://raw.githubusercontent.com/yonggekkk/sing-box-yg/main/sb.sh
 
 
 
-####CMVPS脚本
+##### CM-VPS脚本
 
 ```
 wget https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh
@@ -38,15 +38,15 @@ wget https://raw.githubusercontent.com/eooce/ssh_tool/main/ssh_tool.sh
 
 
 
-####DD重装
+##### 饭奇骏Serv00脚本
 
 ```
-wget https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh
+wget https://raw.githubusercontent.com/frankiejun/serv00-play/main/start.sh
 ```
 
 
 
-####服务器评测脚本
+##### 服务器评测脚本
 
 ```
 wget https://github.com/spiritLHLS/ecs/raw/main/ecs.sh
@@ -54,7 +54,7 @@ wget https://github.com/spiritLHLS/ecs/raw/main/ecs.sh
 
 
 
-####Hax  ipv6 DNS设置
+##### Hax IPV6 DNS 设置
 
 ```
 vim /etc/resolv.conf
