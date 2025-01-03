@@ -6,8 +6,6 @@
 curl -L https://raw.githubusercontent.com/nezhahq/scripts/refs/heads/main/install.sh -o nezha.sh && chmod +x nezha.sh && sudo ./nezha.sh
 ```
 
-
-
 #####哪吒面板nginx反向代理
 
 ```
